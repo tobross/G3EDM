@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>EDM</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+ 
     <!-- materialize framwork cdn -->
+
+  
 
                     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
                 <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
       
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+   
+
+    
 
 </head>
 <body>
 
-        <div class="container">
+   <div class="container">
                 <!-- Page Content goes here -->
-    <div class="">
+    <div id="header" class="card-panel #64b5f6 blue lighten-2">
     <h1>Employee Data Management</h1>
     <h3>A Comprehensive Directory of Employee Billable Hours</h3>
     </div>
-    <div class="">
-        <h2>Current Employees</h2>
-        <table>
+    
+    <br>
+
+    <div class="employeeList">
+        <h3>Current Employees</h3>
+        <table class="highlight" "responsive-table" >
             <tr>
             <th>Employee Name</th>
             <th>Role</th>
@@ -35,13 +51,24 @@
             <th>Monthly Rate ($)</th>
             <th>Total Billed ($)</th>
             </tr>
+
             <tr>
                 <td></td>
             </tr>
+
         </table>
     </div>
+
+    <br>
+
     <form>
-        Employee name<br>
+       <div class="employeeAdd">
+           <h3><i class="material-icons prefix">account_circle</i> Add Employee  </h3>
+        </div>
+        <br>
+        
+        Employee name
+        <br>
         <input type="text" name="Employee Name" id="empName">
         <br>
         Role
@@ -56,8 +83,20 @@
         <br>
         <input type="text" name="monthlyRate" id="monthlyRate">
         <br><br>
-        <input type="submit" value="Submit">
+        
+        <input class="input" type="submit" name="action" >   
+    </input>
+        
     </form>
+
+</div>
+
     <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+     <!--JavaScript at end of body for optimized loading-->
+     <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+    
+
 </body>
 </html>
