@@ -35,21 +35,24 @@
 
     <div class="container">
         <!-- Page Content goes here -->
-        <div id="header" class="card-panel #00acc1 cyan darken-1  white-text  z-depth-3">
-            <h1>Employee Data Management</h1>
-            <h4>A Comprehensive Directory of Employee Billable Hours</h4>
+        <div id="header" class="card-panel #00acc1 cyan darken-1 white-text z-depth-3">
+            <h1 class="center-align">Employee Data Management</h1>
+            <br>
+            <h4 class="center-align">A Comprehensive Directory of Employee Billable Hours</h4>
         </div>
 
         <br>
 
 
 
-        <div class="employeeList card-panel #d4e157 lime lighten-1  z-depth-3">
-            <h3><i class="material-icons prefix small">account_circle</i> Current Employees</h3>
+        <div class="employeeList card-panel #d4e157 lime lighten-1 cyan-text text-darken-1 z-depth-3">
+            <h3>
+                <i class="material-icons prefix small">account_circle</i> Current Employees</h3>
         </div>
 
-        <table class="highlight" "responsive-table">
-            <tr >
+
+        <table class="highlight striped">
+            <tr>
                 <th>Employee Name</th>
                 <th>Role</th>
                 <th>Start Date</th>
@@ -62,27 +65,33 @@
                 <td></td>
             </tr>
 
+
         </table>
 
 
         <br>
 
         <form>
-            <div class="employeeAdd card-panel #d4e157 lime lighten-1 z-depth-3">
+            <div class="employeeAdd card-panel #d4e157 lime lighten-1 cyan-text text-darken-1 z-depth-3">
                 <h3>
-                    <i class="material-icons prefix small">add_circle_outline</i> Add Employee </h3>
+                    <i class="material-icons prefix small">add_circle_outline</i> Add Employee
+                </h3>
             </div>
 
 
             <br> Employee name
             <br>
-            <input type="text" name="Employee Name" id="empName">
+            <input class="hoverable" type="text" name="Employee Name" id="empName">
+
+
             <br> Role
             <br>
             <input type="text" name="role" id="role">
+
             <br> Start Date (DD/MM/YYYY/ -ex: 01/01/99)
             <br>
             <input type="text" name="startDate" id="startDate">
+
             <br> Monthly Rate
             <br>
             <input type="text" name="monthlyRate" id="monthlyRate">
@@ -90,13 +99,20 @@
             <br>
 
 
-            <button class="btn waves-effect btn-large #00acc1 cyan darken-1 white-text pulse  z-depth-3" type="submit" name="action">Submit
+            <button class="btn waves-effect btn-large  cyan darken-1 white-text pulse  z-depth-3" type="submit" name="action">Submit
                 <i class="material-icons right">send</i>
             </button>
+    </div>
+    </form>
 
-        </form>
-
-        <br>
+    <br>
+    <footer class="page-footer #d4e157 lime lighten-1 ">
+            <div class="footer-copyright cyan darken-1">
+                    <div class="container ">
+                    © 2018 Copyright Text
+                    
+                    </div>
+    </footer>
 
     </div>
     </div>
