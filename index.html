@@ -33,18 +33,18 @@
 
 <body>
 
-    <div class="container">
-        <!-- Page Content goes here -->
-        <div id="header" class="card-panel #00acc1 cyan darken-1 white-text z-depth-3">
-            <h1 class="center-align">Employee Data Management</h1>
-            <br>
-            <h4 class="center-align">A Comprehensive Directory of Employee Billable Hours</h4>
-        </div>
+    <!-- Page Header -->
 
+    <div id="header" class="card-panel #00acc1 cyan darken-1 white-text z-depth-3">
+        <h1 class="center-align">Employee Data Management</h1>
         <br>
+        <h4 class="center-align">A Comprehensive Directory of Employee Billable Hours</h4>
+    </div>
 
+    <br>
 
-
+    <!-- Page Content goes here -->
+    <div class="container">
         <div class="employeeList card-panel #d4e157 lime lighten-1 cyan-text text-darken-1 z-depth-3">
             <h3>
                 <i class="material-icons prefix small">account_circle</i> Current Employees</h3>
@@ -71,6 +71,7 @@
 
         <br>
 
+        <!-- Add Employee Form -->
         <form>
             <div class="employeeAdd card-panel #d4e157 lime lighten-1 cyan-text text-darken-1 z-depth-3">
                 <h3>
@@ -78,55 +79,63 @@
                 </h3>
             </div>
 
+            <div>
 
-            <br> Employee name
-            <br>
-            <input class="hoverable" type="text" name="Employee Name" id="empName">
-
-
-            <br> Role
-            <br>
-            <input type="text" name="role" id="role">
-
-            <br> Start Date (DD/MM/YYYY/ -ex: 01/01/99)
-            <br>
-            <input type="text" name="startDate" id="startDate">
-
-            <br> Monthly Rate
-            <br>
-            <input type="text" name="monthlyRate" id="monthlyRate">
-            <br>
-            <br>
+                <br>
+                <br>
+                <input class="orange-text" type="text" name="Employee Name" id="empName" placeholder="Employee Name">
 
 
-            <button class="btn waves-effect btn-large  cyan darken-1 white-text pulse  z-depth-3" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-            </button>
+                <br>
+                <br>
+                <input class=" orange-text" type="text" name="role" id="role" placeholder="Role">
+
+
+                
+                <br>
+                <br>
+                <input class=" orange-text" type="text" name="startDate" id="startDate" placeholder="Start Date (DD/MM/YYYY/ -ex: 01/01/99) ">
+
+                <br> 
+                <br>
+                <input class=" orange-text" type="text" name="monthlyRate" id="monthlyRate" placeholder="Monthly Rage">
+
+                <br>
+                <br>
+
+                <button class="btn waves-effect btn-large  cyan darken-1 white-text pulse  z-depth-3" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+               
+            </div>
+
+        </form>
+        <br>
+       
+
     </div>
-    </form>
-
-    <br>
-    <footer class="page-footer #d4e157 lime lighten-1 ">
+        <!-- Footer -->
+        <footer class="page-footer #d4e157 lime lighten-1 ">
             <div class="footer-copyright cyan darken-1">
-                    <div class="container ">
+                <div class="container ">
                     © 2018 Copyright Text
-                    
-                    </div>
-    </footer>
 
-    </div>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+                </div>
+        </footer>
 
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+       
 
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 
 
